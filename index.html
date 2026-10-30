@@ -1,1 +1,170 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veille Cybersécurité Quotidienne - 30 octobre 2026</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; line-height: 1.6; }
+h1 { color: #58a6ff; text-align: center; border-bottom: 2px solid #30363d; padding-bottom: 10px; }
+h2 { color: #f0883e; border-left: 4px solid #f0883e; padding-left: 10px; margin-top: 40px; }
+.news { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 20px 0; }
+.news img { max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 15px; display: block; }
+.news h3 { color: #79c0ff; margin-top: 0; }
+.meta { color: #8b949e; font-size: 0.9em; margin-bottom: 10px; }
+a { color: #58a6ff; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.summary { text-align: justify; }
+footer { text-align: center; margin-top: 50px; color: #8b949e; font-size: 0.8em; }
+</style>
+</head>
+<body>
+<h1>Veille Cybersécurité Quotidienne<br>30 octobre 2026</h1>
+<p style="text-align:center;">Sources spécialisées des 5 continents. Maximum 2 news par section.</p>
+
+<h2>Vulnérabilités critiques</h2>
+
+<div class="news">
+<img src="https://cdn.prod.website-files.com/681e366f54a6e3ce87159ca4/6ada43b460bb4f79e958f41c_php-trt.png" alt="PHP2Shell">
+<h3>PHP2Shell : RCE non authentifiée dans le cœur de PHP (CVE-2026-109618 / CVE-2026-109619)</h3>
+<div class="meta">Date : 30 octobre 2026 | Source : <a href="https://www.sysdig.com/blog/php2shell-cve-2026-109618-and-cve-2026-109619-detecting-unauthenticated-remote-code-execution-in-php-core" target="_blank">Sysdig / CISA / multi-sources</a></div>
+<div class="summary">
+Les vulnérabilités PHP2Shell (use-after-free dans la gestion des erreurs fatales et l'état des requêtes) permettent une exécution de code à distance non authentifiée sur des versions PHP de 5.4 à 8.5.11. Ajoutées au catalogue KEV de la CISA le 26 octobre avec échéance au 29, elles sont activement exploitées. Des chaînes avec une élévation de privilèges kernel (Fragnesia) ont permis de rooter des firewalls Palo Alto et d'autres appliances en Amérique, Asie et Europe. Plus d'un million d'hôtes exposés estimés. Patch immédiat requis vers 8.2.35+, 8.3.36+, etc.
+</div>
+</div>
+
+<div class="news">
+<img src="https://www.securityweek.com/wp-content/uploads/2026/05/Drupal.jpg" alt="Drupal">
+<h3>Drupal Commerce Core : contournement d'authentification exploité (CVE-2026-118539)</h3>
+<div class="meta">Date : 30 octobre 2026 | Source : <a href="https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/" target="_blank">SecurityWeek / Drupal SA-CONTRIB-2026-254</a></div>
+<div class="summary">
+Une faille de type missing authorization dans le module Commerce Core (utilisé sur plus de 42 000 sites) permet un contournement d'accès non authentifié sur certaines routes et champs d'entités, pouvant impacter financièrement les vendeurs (manipulation d'ordres, prix, etc.). Classée highly critical (21/25), elle est activement exploitée. Affecte les versions &lt;2.41 et 3.0-3.3.13. Correctifs : 8.x-2.41 ou 3.3.13. Audit des commandes recommandé.
+</div>
+</div>
+
+<h2>Dataleak France</h2>
+
+<div class="news">
+<img src="https://incyber.org//wp-content/uploads/2026/08/incyber-news-cybersecurite-cybersecurity-attaques-massives-massive-attacks-1024x576.png" alt="DGFiP">
+<h3>Piratage de la DGFiP : second suspect (16 ans) mis en examen</h3>
+<div class="meta">Date : 30 octobre 2026 | Source : <a href="https://incyber.org/article/piratage-dgfip-second-suspect-mis-en-examen/" target="_blank">INCYBER NEWS</a></div>
+<div class="summary">
+Le parquet de Paris a confirmé la mise en examen d'un adolescent de 16 ans surnommé « Casquette » dans l'affaire du piratage de la Direction générale des finances publiques (révélé en août). Lié au collectif Epsilon / ZeroBytes, l'attaque a exposé des données fiscales et personnelles de plus de 678 000 particuliers et professionnels. Charges : extraction frauduleuse de données en bande organisée et accès/maintien frauduleux. Un premier suspect (18 ans, « ChatNoir ») avait déjà été mis en examen.
+</div>
+</div>
+
+<div class="news">
+<img src="https://www.01net.com/app/uploads/2026/10/cts-strasbourg-tram-fuite-donnees-1600x900.jpg" alt="CTS Strasbourg">
+<h3>CTS Strasbourg : fuite de données de 230 000 comptes clients</h3>
+<div class="meta">Date : 29 octobre 2026 | Source : <a href="https://www.01net.com/actualites/fuite-de-donnees-les-informations-de-230-000-francais-compromises-lors-dune-nouvelle-cyberattaque.html" target="_blank">01net</a></div>
+<div class="summary">
+La Compagnie des transports strasbourgeois a été victime d'une exfiltration via son site internet touchant environ 230 000 comptes (près de 40 % des usagers). Données concernées : nom, prénom, date de naissance, adresse postale, identifiant client. Pas de données bancaires ni mots de passe. L'attaque date de la nuit du 18-19 octobre. CNIL notifiée, plainte déposée. Sécurité renforcée et exfiltration stoppée.
+</div>
+</div>
+
+<h2>Dataleak Monde</h2>
+
+<div class="news">
+<img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800" alt="Healthcare data">
+<h3>Quest Diagnostics : compromission de données patients de santé</h3>
+<div class="meta">Date : 30 octobre 2026 | Source : <a href="https://www.privacyguides.org/news/2026/10/30/data-breach-roundup-oct-23-oct-29-2026/" target="_blank">Privacy Guides / TechCrunch</a></div>
+<div class="summary">
+Le géant américain des analyses médicales Quest Diagnostics a confirmé une cyberattaque compromettant des données personnelles et de santé de patients stockées dans ses systèmes (Quanum Lab Services). Volume exact non encore précisé. S'inscrit dans une série d'attaques contre le secteur santé/tech médicale. Impact potentiel élevé sur la confidentialité médicale.
+</div>
+</div>
+
+<div class="news">
+<img src="https://pwn.watch/og/d/2026-10-23.jpg" alt="Sony So-net">
+<h3>Sony So-net (Japon) : 2,58 millions de dossiers clients exposés</h3>
+<div class="meta">Date : 27-30 octobre 2026 | Source : <a href="https://pwn.watch/d/2026-10-23" target="_blank">pwn.watch / sources officielles</a></div>
+<div class="summary">
+Sony Network Communications a révélé un accès non autorisé à la base de données membres de son FAI So-net (détecté le 23 octobre après intrusion le 19). Environ 2,14 M de membres So-net + 443 k plala (S course) : noms, téléphones, emails, IDs, dates de naissance, genres, IDs de connexion. Inclut ~54 k mots de passe email et quelques détails bancaires. Serveur mis hors ligne. Impact majeur au Japon (Asie).
+</div>
+</div>
+
+<h2>Entreprises hackées</h2>
+
+<div class="news">
+<img src="https://agentbeam.com/attacks/2026-10/opengraph-image-tzyqem?6fc599caf05b2d47" alt="Binance attack">
+<h3>Binance : vol estimé à 6,3 milliards $ via laptop DevOps compromis</h3>
+<div class="meta">Date : 29-30 octobre 2026 | Source : <a href="https://agentbeam.com/attacks/2026-10" target="_blank">AgentBeam / Binance</a></div>
+<div class="summary">
+Binance a suspendu dépôts/retraits après un vol via un laptop d'ingénieur DevOps compromis. Accès à un conteneur de service permettant des retraits non autorisés. Estimation ~6,3 Md$, dont ~3 Md$ gelés. Pas de preuve de compromission de clés privées. Attribué préliminairement à des acteurs nord-coréens (TraderTraitor). Incident majeur dans la finance crypto.
+</div>
+</div>
+
+<div class="news">
+<img src="https://www.securitytoday.de/wp-content/uploads/2026/10/cover-hero-31.jpg" alt="Cloud ransomware">
+<h3>GMO Internet : ransomware sur Onamae.com Desktop Cloud (jusqu'à 26 739 serveurs)</h3>
+<div class="meta">Date : 20-30 octobre 2026 | Source : <a href="https://www.securitytoday.de/en/2026/10/22/black-october-many-attacks-had-been-running-for-months/" target="_blank">SecurityToday / sources japonaises</a></div>
+<div class="summary">
+GMO a confirmé un accès non autorisé à son service Desktop Cloud Onamae.com avec installation de programmes malveillants. Jusqu'à 26 739 serveurs clients potentiellement affectés (plans mis hors ligne progressivement). Panneaux de contrôle exposés, secrets valides. Fait partie d'une série d'attaques cloud/ransomware au Japon. Impact sur entreprises et gouvernements.
+</div>
+</div>
+
+<h2>Derniers rapports forensiques intéressants</h2>
+
+<div class="news">
+<img src="https://web-assets.esetstatic.com/wls/2026/10-26/eset-apt-activity-report-q2-2026-q3-2026.jpg" alt="ESET APT Report">
+<h3>Rapport d'activité APT ESET Q2-Q3 2026</h3>
+<div class="meta">Date : 28 octobre 2026 | Source : <a href="https://www.welivesecurity.com/en/eset-research/eset-apt-activity-report-q2-2026-q3-2026/" target="_blank">WeLiveSecurity / ESET Research</a></div>
+<div class="summary">
+Rapport couvrant avril-septembre 2026. Points clés : escalade d'acteurs alignés sur la Biélorussie (GhostWriter) avec première attaque destructive sur une entité européenne (firme ukrainienne) ; convergence avec priorités russes de guerre ; activité iranienne accrue (OilRig, MuddyWater) contre Israël et US ; Chine en collecte d'intel gouvernementale ; Lazarus et autres. Pas de reshape majeur par l'IA. Analyse technique des TTPs, outils et cibles.
+</div>
+</div>
+
+<div class="news">
+<img src="https://files.cyberriskalliance.com/wp-content/uploads/2025/12/soc-team-calm-incident-response-socialsight-e1774990144864.jpg" alt="Forensics IR">
+<h3>Forensique post-breach et réponses à incidents (SC Media / CRA)</h3>
+<div class="meta">Date : 28 octobre 2026 | Source : <a href="https://www.scworld.com/resource/after-the-breach-uncovering-the-full-scope-of-the-attack" target="_blank">SC Media</a> / <a href="https://www.crai.com/engagements/assiting-a-large-public-research-canadian-university-with-imminent-threat-from-ransomware-group-cl0p/" target="_blank">CRA</a></div>
+<div class="summary">
+Discussions sur l'importance de la forensique pour établir la portée complète d'un incident (accès persistant, données exfiltrées). Utilisation d'outils comme FTK, collecte d'artefacts, chain of custody. Cas d'une université canadienne face à Cl0p : découverte de 35 % de systèmes non managés, multiples IAB, toolkit d'acteur. IA accélère corrélation et reporting. Essentiel pour décisions légales/assurance.
+</div>
+</div>
+
+<h2>Groupes d’acteurs (ransomware, APT, etc.)</h2>
+
+<div class="news">
+<img src="https://d.techtimes.com/en/full/442811/hacker.jpg" alt="GhostWriter Belarus">
+<h3>GhostWriter (Biélorussie) : première attaque destructive de type russe en Europe</h3>
+<div class="meta">Date : 28-29 octobre 2026 | Source : <a href="https://www.techtimes.com/articles/329672/20261029/belarus-hackers-wiped-data-first-russia-tier-cyberattack-europe-eset-reports.htm" target="_blank">TechTimes / ESET</a></div>
+<div class="summary">
+Le groupe GhostWriter (UNC1151, etc.) a mené en mai 2026 une attaque destructive (wiper) contre une firme manufacturière ukrainienne — première du genre pour un acteur biélorusse, auparavant limité à l'espionnage/influence. Convergence opérationnelle avec les priorités de guerre russes. Escalade notable dans le théâtre est-européen.
+</div>
+</div>
+
+<div class="news">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNLZ-1vEmoCyztDVMziqJlhZPTZfW4mOe-qDn6OxDQ-K2LVZTvqhoOe3MIip5bDJfiJd7e3HLcq4S-0xb2SlfWbEqp4vlvbOnQDSP5edsQIxHFtYSCt1qM7XZksq0NPZ9AGesx0YzqHsTeWUuPUTysC5dbuDOvKIjQW0DJvkg1UG9KLH2Doglq7WtgyiRM/s1700-nu-rw-lo-l85-e365/russia-nato.jpg" alt="APT28">
+<h3>APT28 (Russie/GRU) : intrusion chez un constructeur naval OTAN et autres</h3>
+<div class="meta">Date : 20 octobre 2026 (rapport) | Source : <a href="https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html" target="_blank">The Hacker News / Symantec</a></div>
+<div class="summary">
+APT28 a compromis un constructeur de navires naval, un fabricant de moteurs d'avions militaires et une agence de law enforcement dans deux pays OTAN européens. Utilisation de HOOKEDGE, loader réflectif non documenté, tunnels SSH, credential theft. Activité hands-on-keyboard sur plusieurs jours. Espionnage en soutien aux objectifs de guerre.
+</div>
+</div>
+
+<h2>A parte sur la géopolitique mondiale</h2>
+
+<div class="news">
+<img src="https://www.aspistrategist.org.au/wp-content/uploads/2026/10/Petya.A-e1793232675713.png" alt="State cyber attacks">
+<h3>Traiter les intrusions cyber étatiques comme des attaques</h3>
+<div class="meta">Date : 29 octobre 2026 | Source : <a href="https://www.aspistrategist.org.au/its-time-to-treat-state-sponsored-cyber-intrusions-as-attacks/" target="_blank">The Strategist (ASPI, Australie)</a></div>
+<div class="summary">
+Article argumentant que les démocraties ont erré en ne considérant pas les intrusions cyber comme des actes de guerre. Rapport ASD australien : acteurs étatiques prépositionnent dans les infrastructures critiques. Exemples russes (Gamaredon, Sandworm/NotPetya) contre Ukraine/OTAN. Appel à 6 changements : reconnaître les intrusions comme attaques, etc. Perspective océanienne sur l'escalade.
+</div>
+</div>
+
+<div class="news">
+<img src="https://www.orfonline.org/public/uploads/posts/image/thumbnail/1793098287_AI-driven-cyber-threats.jpg" alt="Indo-Pacific AI cyber">
+<h3>Réponses indo-pacifiques aux menaces cyber pilotées par l'IA</h3>
+<div class="meta">Date : 27 octobre 2026 | Source : <a href="https://www.orfonline.org/expert-speak/from-reactive-to-proactive-indo-pacific-s-responses-to-ai-driven-cyber-threats" target="_blank">ORF (Inde)</a></div>
+<div class="summary">
+Les puissances moyennes de l'Indo-Pacifique passent de la défense réactive à des stratégies proactives face aux menaces IA. Japon a déclaré une urgence cyber (attaques CNI, rail, auto). Augmentation des incidents en Australie, Singapour, Japon. 84 % des victimes ransomware rapportent usage d'IA par attaquants. Enjeux de souveraineté digitale et lacunes réglementaires sur l'IA.
+</div>
+</div>
+
+<footer>
+Veille compilée le 30 octobre 2026 à partir de sources spécialisées mondiales (Europe, Amérique, Asie, Océanie, Afrique via rapports). Pour information uniquement.<br>
+Publié sur GitHub Pages potentiel.
+</footer>
+</body>
+</html>
